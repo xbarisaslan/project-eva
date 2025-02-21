@@ -6,21 +6,15 @@
       <h1 class="font-semibold text-2xl">Login</h1>
       <div class="flex flex-col gap-3 w-[75%] mr-auto">
         <label class="font-medium text-lg" for="email">E-mail</label>
-        <input
-          id="email"
-          class="border border-gray-200 px-3 py-1 bg-white outline-none rounded-md"
-          v-model="email"
-          placeholder="E-mail"
-        />
+        <Input id="email" placeholder="E-mail" v-model="email" />
       </div>
       <div class="flex flex-col gap-3 w-[75%] mr-auto">
         <label class="font-medium text-lg" for="password">Password</label>
-        <input
+        <Input
           id="password"
-          class="border border-gray-200 px-3 py-1 bg-white outline-none rounded-md"
-          v-model="password"
-          placeholder="Password"
           type="password"
+          placeholder="Password"
+          v-model="password"
         />
       </div>
       <p class="text-red-500 font-semibold">{{ error }}</p>
@@ -36,6 +30,7 @@
 <script setup>
 import { ref } from "vue";
 import useAuth from "../composables/useAuth";
+import Input from "./Input.vue";
 const { loginUser, error } = useAuth();
 
 const email = ref(null);
