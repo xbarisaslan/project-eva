@@ -1,7 +1,7 @@
 export default {
   namespaced: true,
   state: {
-    dayRange: "7",
+    dayRange: "14",
   },
   mutations: {
     setDayRange(state, day) {

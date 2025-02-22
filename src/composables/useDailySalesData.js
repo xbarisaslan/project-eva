@@ -4,7 +4,7 @@ import { useStore } from "vuex";
 
 export default function useDailySalesData() {
   const store = useStore();
-  const dailySalesData = ref(null); // maybe make it ref([])?
+  const dailySalesData = ref([]); // maybe make it ref([])?
 
   const api = axios.create({
     baseURL: "https://iapitest.eva.guru",

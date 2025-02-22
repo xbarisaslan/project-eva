@@ -4,11 +4,11 @@
       class="w-[28rem] bg-gray-200 flex flex-col items-center self-center gap-4 px-12 py-8 rounded-lg"
     >
       <h1 class="font-semibold text-2xl">Login</h1>
-      <div class="flex flex-col gap-3 w-[75%] mr-auto">
+      <div class="flex flex-col gap-3 w-full">
         <label class="font-medium text-lg" for="email">E-mail</label>
         <Input id="email" placeholder="E-mail" v-model="email" />
       </div>
-      <div class="flex flex-col gap-3 w-[75%] mr-auto">
+      <div class="flex flex-col gap-3 w-full">
         <label class="font-medium text-lg" for="password">Password</label>
         <Input
           id="password"
@@ -19,7 +19,7 @@
       </div>
       <p class="text-red-500 font-semibold">{{ error }}</p>
       <button
-        class="text-white font-medium w-full bg-red-400 hover:opacity-80 transition ease-in cursor-pointer py-1 mt-2 rounded-xl"
+        class="text-white font-medium w-[60%] mx-auto py-1 bg-red-400 hover:opacity-80 transition ease-in cursor-pointer rounded-xl"
         @click="handleLogin"
       >
         Login

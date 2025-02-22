@@ -1,7 +1,7 @@
 <template>
   <div>
     <input
-      class="border border-gray-200 px-3 py-1 bg-white outline-none rounded-md"
+      class="border border-gray-200 px-3 py-1 bg-white outline-none rounded-md w-full"
       :class="class"
       :id="id"
       :placeholder="placeholder"
